@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Color6}">
+
+    <!--Stijl die alleen op deze pagina van toepassing is. De buttons hier moeten deze opmaak. Ergens anders niet.-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource Color9}"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource Color3}"/>
+                <Setter Property="FontSize" Value="Micro"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid Margin="10" RowSpacing="0" ColumnSpacing="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Column="0" 
+                     Grid.Row="0" 
+                     BackgroundColor="{StaticResource Color1}">
+            <Button Text="Grid&#x0a;Layout" BackgroundColor="{StaticResource Color1}" 
+                    x:Name="Button11" Clicked="Button11_Clicked"/>
+        </StackLayout>
+        
+        <StackLayout Grid.Column="1" 
+                     Grid.Row="0" 
+                     BackgroundColor="{StaticResource Color2}">
+            <Button Text="Stack&#x0a;Layout" BackgroundColor="{StaticResource Color2}" x:Name="Button12" Clicked="Button12_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="2" 
+                     Grid.Row="0" 
+                     BackgroundColor="{StaticResource Color3}">
+            <Button Text="Absolute&#x0a;Layout&#x0a;Animated" BackgroundColor="{StaticResource Color3}" x:Name="Button13" Clicked="Button13_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Grid.Column="3"
+               Grid.Row="0"
+               BackgroundColor="{StaticResource Color4}">
+            <Button Text="Rela-&#x0a;tive&#x0a;Layout" BackgroundColor="{StaticResource Color4}" x:Name="Button14" Clicked="Button14_Clicked"/>
+        </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="1"
+               BackgroundColor="{StaticResource Color5}">
+                <Button Text="Flex&#x0a;Layout" BackgroundColor="{StaticResource Color5}" x:Name="Button21" Clicked="Button21_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="1"
+               BackgroundColor="{StaticResource Color6}">
+            <Button Text="Down&#x0a;load&#x0a;Image" BackgroundColor="{StaticResource Color6}" x:Name="Button22" Clicked="Button22_Clicked" />
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="1"
+               BackgroundColor="{StaticResource Color7}">
+                <Button Text="Embed&#x0a;Image" BackgroundColor="{StaticResource Color7}" x:Name="Button23" Clicked="Button23_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="1"
+               BackgroundColor="{StaticResource Color8}">
+            <Button Text="Acti&#x0a;Vity&#x0a;Indi&#x0a;Cator" BackgroundColor="{StaticResource Color8}" x:Name="Button24" Clicked="Button24_Clicked" />
+            </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="2"
+               BackgroundColor="{StaticResource Color1}">
+                <Button Text="Markup&#x0a;exten&#x0a;sion" BackgroundColor="{StaticResource Color1}" x:Name="Button31" Clicked="Button31_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="2"
+               BackgroundColor="{StaticResource Color2}">
+                <Button Text="Tabbed&#x0a;Page" BackgroundColor="{StaticResource Color2}" x:Name="Button32" Clicked="Button32_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="2"
+               BackgroundColor="{StaticResource Color3}">
+                <Button Text="Caro&#x0a;usel&#x0a;Page" BackgroundColor="{StaticResource Color3}" x:Name="Button33" Clicked="Button33_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="2"
+               BackgroundColor="{StaticResource Color4}">
+                <Button Text="Modal&#x0a;Page" BackgroundColor="{StaticResource Color4}" x:Name="Button34" Clicked="Button34_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="3"
+               BackgroundColor="{StaticResource Color5}">
+            <Button Text="Scroll&#x0a;View&#x0a;Child" BackgroundColor="{StaticResource Color5}" x:Name="Button41" Clicked="Button41_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="3"
+               BackgroundColor="{StaticResource Color6}">
+                <Button Text="Scroll&#x0a;View&#x0a;vert" BackgroundColor="{StaticResource Color6}" x:Name="Button42" Clicked="Button42_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="3"
+               BackgroundColor="{StaticResource Color7}">
+                <Button Text="Scroll&#x0a;View&#x0a;hor" BackgroundColor="{StaticResource Color7}" x:Name="Button43" Clicked="Button43_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="3"
+               BackgroundColor="{StaticResource Color8}">
+                <Button Text="Simple&#x0a;Absolute&#x0a;Layout" BackgroundColor="{StaticResource Color8}" x:Name="Button44" Clicked="Button44_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="4"
+               BackgroundColor="{StaticResource Color1}">
+                <Button Text="Simple&#x0a;Relative&#x0a;Layout" BackgroundColor="{StaticResource Color1}" x:Name="Button51" Clicked="Button51_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="4"
+               BackgroundColor="{StaticResource Color2}">
+                <Button Text="Simple&#x0a;Flex&#x0a;Layout" BackgroundColor="{StaticResource Color2}" x:Name="Button52" Clicked="Button52_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="4"
+               BackgroundColor="{StaticResource Color3}">
+                <Button Text="Sqlite&#x0a;Add&#x0a;Question" BackgroundColor="{StaticResource Color3}" x:Name="Button53" Clicked="Button53_Clicked"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="4"
+               BackgroundColor="{StaticResource Color4}">
+                <Button Text="5-4&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color4}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="5"
+               BackgroundColor="{StaticResource Color5}">
+                <Button Text="6-1&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color5}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="5"
+               BackgroundColor="{StaticResource Color6}">
+                <Button Text="6-2&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color6}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="5"
+               BackgroundColor="{StaticResource Color7}">
+                <Button Text="6-3&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color7}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="5"
+               BackgroundColor="{StaticResource Color8}">
+                <Button Text="6-4&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color8}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="0"
+               Grid.Row="6"
+               BackgroundColor="{StaticResource Color1}">
+                <Button Text="7-1&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color1}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1"
+               Grid.Row="6"
+               BackgroundColor="{StaticResource Color2}">
+                <Button Text="7-2&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color2}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="2"
+               Grid.Row="6"
+               BackgroundColor="{StaticResource Color3}">
+                <Button Text="7-3&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color3}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="3"
+               Grid.Row="6"
+               BackgroundColor="{StaticResource Color4}">
+                <Button Text="7-4&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color4}"/>
+            </StackLayout>
+
+    </Grid>
+
+</ContentPage>

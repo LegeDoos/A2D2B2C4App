@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:A2D2B2C4App.MarkupExtensions"
+             x:Class="A2D2B2C4App.ModalExPage"
+             BackgroundColor="{StaticResource Color4}">
+
+    <StackLayout Margin="20">
+        <Label Text="ModalPage"
+                   FontSize="50"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+        <StackLayout Spacing="10"
+                     VerticalOptions="Start"
+                     Margin="10,0,10,10">
+            <Label HorizontalOptions="Center"  Text="Bepaling:"
+                       TextColor="{StaticResource Color9}"/>
+        </StackLayout>
+        
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                <Label HorizontalOptions="Center" Text="Pas als je heel goed hebt gelezen wat hier staat, krijg je van mij de toestemming om de pagina te verlaten. Weet je wat? Om akkoord te gaan met alles wat ik zeg, moet je eerst even de checkbox aanvinken. 'Ik, de gebruiker van deze app, ben het volledig eens met met het feit dat de docenten die dit vak geven, de beste docenten te wereld zijn! En nu we het er toch over hebben, eigenlijk ook gewoon de meest geniale, fantastische, leuke, grappige mensen die ik ken.' Oh ja, en jij daar, slimmerik, die denkt dat hij de Android-terugknop kan gebruiken... BAZINGA!"
+                   TextColor="{StaticResource Color9}"
+                   HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+        </ScrollView>
+        <Frame HeightRequest="150" Padding="0" BackgroundColor="{StaticResource Color4}" HasShadow="False" Margin="20">
+            <Image x:Name="SheldonImage" VerticalOptions="Center" Source="{local:EmbeddedImage A2D2B2C4App.Images.bazinga.jpg}"/>
+        </Frame>
+        
+        <StackLayout Margin="30,10,30,0" VerticalOptions="End">
+            <Label x:Name="WarningLabel" HorizontalOptions="Center"  
+                   Text="" 
+                   TextColor="{StaticResource AlarmColor}" 
+                   HorizontalTextAlignment="Center"/>
+            <CheckBox x:Name="AgreeCheckbox" Color="{StaticResource Color9}" 
+                      HorizontalOptions="Center"/>
+            <Button Text="Back" x:Name="ModalRemoveButton" 
+                    Clicked="ModalRemoveButton_Clicked" 
+                    BackgroundColor="{StaticResource Color6}" 
+                    TextColor="{StaticResource Color9}"/>
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>

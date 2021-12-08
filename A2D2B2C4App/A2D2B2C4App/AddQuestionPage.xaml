@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.AddQuestionPage">
+
+    <StackLayout>
+        <Label Text="Geef hier een nieuwe vraag in."/>
+        <Entry x:Name="QuestionEntry" Placeholder="Maximum 200 tekens!"/>
+        <Button x:Name="SaveButton" Text="Save" Clicked="SaveButton_Clicked"/>
+    </StackLayout>
+    
+    
+    
+</ContentPage>

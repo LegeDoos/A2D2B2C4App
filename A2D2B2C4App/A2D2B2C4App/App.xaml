@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Color5">#776237</Color>
+            <Color x:Key="Color2">#012840</Color>
+            <Color x:Key="Color3">#AA7B1C</Color>
+            <Color x:Key="Color4">#20638C</Color>
+            <Color x:Key="Color8">#453327</Color>
+            <Color x:Key="Color6">#37785A</Color>
+            <Color x:Key="Color7">#42524F</Color>
+            <Color x:Key="Color1">#595959</Color>
+            <Color x:Key="Color9">White</Color>
+            <Color x:Key="AlarmColor">Red</Color>
+
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Color8}"/>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

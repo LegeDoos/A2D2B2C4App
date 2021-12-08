@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.CarouselExPage"
+              xmlns:local="clr-namespace:A2D2B2C4App">
+    
+    <local:PlainContentPage1 Title="1"/>
+    <local:PlainContentPage2 Title="2"/>
+    <local:PlainContentPage3 Title="3"/>
+    
+</CarouselPage>

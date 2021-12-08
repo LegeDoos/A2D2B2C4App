@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.TabbedExPage"
+            xmlns:local="clr-namespace:A2D2B2C4App"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            BarBackgroundColor="{OnPlatform Android ={StaticResource Color5}}"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarTextColor="{StaticResource Color9}">
+
+    <local:PlainContentPage1 Title="*"/>
+    <local:PlainContentPage2 Title="*"/>
+    <local:PlainContentPage3 Title="*"/>
+
+
+</TabbedPage>

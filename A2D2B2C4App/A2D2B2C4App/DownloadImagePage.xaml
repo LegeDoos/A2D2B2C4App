@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2D2B2C4App.DownloadImagePage"
+             Title="DownloadImageDemo">
+
+    <Image x:Name="Image" Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/SA_Barfence.jpg/250px-SA_Barfence.jpg" Aspect="AspectFill"/>
+    
+</ContentPage>
