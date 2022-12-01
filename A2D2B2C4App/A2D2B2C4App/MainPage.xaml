@@ -155,7 +155,7 @@
             <StackLayout Grid.Column="3"
                Grid.Row="4"
                BackgroundColor="{StaticResource Color4}">
-                <Button Text="5-4&#x0a;Bla&#x0a;Bla" BackgroundColor="{StaticResource Color4}"/>
+                <Button Text="API&#x0a;Calls&#x0a;FTW" BackgroundColor="{StaticResource Color4}" x:Name="Button54" Clicked="Button54_Clicked"/>
             </StackLayout>
 
             <StackLayout Grid.Column="0"

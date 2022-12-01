@@ -109,5 +109,10 @@ namespace A2D2B2C4App
         {
             await Navigation.PushAsync(new QuestionPage());
         }
+
+        private async void Button54_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new APICallsPage());
+        }
     }
 }
