@@ -14,7 +14,7 @@ namespace A2D2B2C4App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class QuestionDetailPage : ContentPage
     {
-        Question question;
+        public Question question;
 
         public QuestionDetailPage(Question selectedQuestion)
         {
@@ -31,9 +31,9 @@ namespace A2D2B2C4App
             int updatedRows;
             question.QuestionBody = QuestionBodyEntry.Text;
 
-            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.DatabaseLocation))
+            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.databaseLocation))
             {
-                sQLiteconnection.CreateTable<Question>();
+                _ = sQLiteconnection.CreateTable<Question>();
                 updatedRows = sQLiteconnection.Update(question);
             }
 
@@ -46,7 +46,7 @@ namespace A2D2B2C4App
                 _ = DisplayAlert("Ah, jammer! Er ging iets fout.", "Je vraag is NIET aangepast.", "Ok");
             }
 
-            await Navigation.PopAsync();
+            _ = await Navigation.PopAsync();
 
         }
 
@@ -55,9 +55,9 @@ namespace A2D2B2C4App
             int deletedRows;
             question.QuestionBody = QuestionBodyEntry.Text;
 
-            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.DatabaseLocation))
+            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.databaseLocation))
             {
-                sQLiteconnection.CreateTable<Question>();
+                _ = sQLiteconnection.CreateTable<Question>();
                 deletedRows = sQLiteconnection.Delete(question);
             }
 
@@ -70,7 +70,7 @@ namespace A2D2B2C4App
                 _ = DisplayAlert("Ah, jammer! Er ging iets fout.", "Je vraag is NIET verwijderd.", "Ok");
             }
 
-            await Navigation.PopAsync();
+            _ = await Navigation.PopAsync();
 
         }
     }

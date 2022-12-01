@@ -28,20 +28,20 @@ namespace A2D2B2C4App
         {
             base.OnAppearing();
 
-            using (SQLiteConnection sQLiteConnection = new SQLiteConnection(App.DatabaseLocation))
+            using (SQLiteConnection sQLiteConnection = new SQLiteConnection(App.databaseLocation))
             {
-                sQLiteConnection.CreateTable<Question>();
-                var questions = sQLiteConnection.Table<Question>().ToList();
+                _ = sQLiteConnection.CreateTable<Question>();
+                List<Question> questions = sQLiteConnection.Table<Question>().ToList();
                 QuestionListView.ItemsSource = questions;
             }
         }
 
         private void QuestionListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var selectedQuestion = QuestionListView.SelectedItem as Question;
+            Question selectedQuestion = QuestionListView.SelectedItem as Question;
             if(selectedQuestion != null)
             {
-                Navigation.PushAsync(new QuestionDetailPage(selectedQuestion));
+                _ = Navigation.PushAsync(new QuestionDetailPage(selectedQuestion));
             }
         }
     }

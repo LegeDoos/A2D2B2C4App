@@ -25,9 +25,9 @@ namespace A2D2B2C4App
             Question question = new Question();
             question.QuestionBody = QuestionEntry.Text;
 
-            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.DatabaseLocation))
+            using (SQLiteConnection sQLiteconnection = new SQLiteConnection(App.databaseLocation))
             {
-                sQLiteconnection.CreateTable<Question>();
+                _ = sQLiteconnection.CreateTable<Question>();
                 insertedRows = sQLiteconnection.Insert(question);
             }
 
@@ -40,7 +40,7 @@ namespace A2D2B2C4App
                 _ = DisplayAlert("Ah, jammer! Er ging iets fout.", "Je vraag is NIET toegevoegd aan de database.", "Ok");
             }
 
-            await Navigation.PopAsync();
+            _ = await Navigation.PopAsync();
 
         }
     }
